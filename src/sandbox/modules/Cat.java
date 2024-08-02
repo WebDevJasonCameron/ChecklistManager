@@ -1,19 +1,21 @@
 package sandbox.modules;
+import java.time.LocalDateTime;
+import java.util.ArrayList;;
+
 public class Cat {
 
     // ATTs
-    // CatId
-    // Title
-    // Description
-    // Priority
+    private long idKey;
+    private String title;
+    private String descripton;                   // Purpose of chcklist
 
     // **DATES**
-    // Creation Date
-    // Last Modified
+    private LocalDateTime creationDate;          // When created
+    private LocalDateTime modifiedDate;          // When last modified
 
-    // Refs (List<ref>)
-    // Tags (List<Tag>)
-    // Related Cat Ids (List<Cat>)
+    // **LISTS**
+    private ArrayList<String> refs;             // List of all ref used for this category
+    private ArrayList<String> tags;             // <-- Enums: "auto", "rv", "trip", "maintenance", "repair"
 
 
     // CONs
@@ -22,7 +24,11 @@ public class Cat {
     // GETs & SETs
 
 
-    // METHs
 
+    // METHs
+    public void test() {
+        System.out.println("Cat test");
+    }
 
 }
+
