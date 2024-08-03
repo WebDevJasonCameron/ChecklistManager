@@ -8,7 +8,6 @@ public class TimeTrigger {
     // CON
 
     // GETs & SETs
-
     public long getTime() {
         return time;
     }
@@ -32,6 +31,7 @@ public class TimeTrigger {
 
 
     // METHs
+
 
     // OVRs
     @Override
