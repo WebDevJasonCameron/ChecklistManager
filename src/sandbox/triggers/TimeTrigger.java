@@ -4,6 +4,7 @@ public class TimeTrigger {
     private long time;
     private long interval;
     private boolean triggered;
+    private boolean completed;
 
     // CON
 
@@ -29,8 +30,14 @@ public class TimeTrigger {
         this.triggered = triggered;
     }
 
+    public boolean isCompleted() {
+        return completed;
+    }
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
 
-    // METHs
+// METHs
 
 
     // OVRs

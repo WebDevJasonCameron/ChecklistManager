@@ -40,8 +40,6 @@ public class Checklist {
     // CONs
 
     // GETs & SETs
-
-
     public long getIdKey() {
         return idKey;
     }
