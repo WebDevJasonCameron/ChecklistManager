@@ -159,14 +159,6 @@ public class Checklist {
                 ", tasks=" + tasks +
                 ", subChecklists=" + subChecklists +
                 ", gear=" + gear +
-                ", conditionEvent='" + conditionEvent + '\'' +
-                ", locationEvent='" + locationEvent + '\'' +
-                ", actionEvent='" + actionEvent + '\'' +
-                ", behaviorEvent='" + behaviorEvent + '\'' +
-                ", systemEvent='" + systemEvent + '\'' +
-                ", environmentEvent='" + environmentEvent + '\'' +
-                ", event='" + event + '\'' +
-                ", interval=" + interval +
                 ", catIdKey=" + catIdKey +
                 '}';
     }
