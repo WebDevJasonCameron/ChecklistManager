@@ -24,16 +24,6 @@ public class Checklist {
     private ArrayList<Long> subChecklists;   // All checklist in this module
     private ArrayList<String> gear;          // Gear needed for this checklist
 
-    // **TRIGGERS**
-    private String conditionEvent;           // "levels fall below a certain point"
-    private String locationEvent;            // object with "lat long and radius"
-    private String actionEvent;              // Enum: "user sends email", etc.
-    private String behaviorEvent;            // Enum: "heavy use", "no use 30 days"
-    private String systemEvent;              // Enum: "equipment error coder", etc.
-    private String environmentEvent;         // Enum: "temperature", "humidity"
-    private String event;                    // Something that triggers the checklist
-    private int interval;                    // How the checklist should be completed a year
-
     // **REFS**
     private long catIdKey;                   // the category this checklist belongs to
 
@@ -136,62 +126,6 @@ public class Checklist {
     }
     public void setGear(ArrayList<String> gear) {
         this.gear = gear;
-    }
-
-    public String getConditionEvent() {
-        return conditionEvent;
-    }
-    public void setConditionEvent(String conditionEvent) {
-        this.conditionEvent = conditionEvent;
-    }
-
-    public String getLocationEvent() {
-        return locationEvent;
-    }
-    public void setLocationEvent(String locationEvent) {
-        this.locationEvent = locationEvent;
-    }
-
-    public String getActionEvent() {
-        return actionEvent;
-    }
-    public void setActionEvent(String actionEvent) {
-        this.actionEvent = actionEvent;
-    }
-
-    public String getBehaviorEvent() {
-        return behaviorEvent;
-    }
-    public void setBehaviorEvent(String behaviorEvent) {
-        this.behaviorEvent = behaviorEvent;
-    }
-
-    public String getSystemEvent() {
-        return systemEvent;
-    }
-    public void setSystemEvent(String systemEvent) {
-        this.systemEvent = systemEvent;
-    }
-
-    public String getEnvironmentEvent() {
-        return environmentEvent;
-    }
-    public void setEnvironmentEvent(String environmentEvent) {
-        this.environmentEvent = environmentEvent;
-    }
-
-    public String getEvent() {
-        return event;
-    }
-    public void setEvent(String event) {
-        this.event = event;
-    }
-
-    public int getInterval() {
-        return interval;
-    }
-    public void setInterval(int interval) {
-        this.interval = interval;
     }
 
     public long getCatIdKey() {
