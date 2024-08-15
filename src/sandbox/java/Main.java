@@ -13,10 +13,14 @@ public class Main {
         Task task = new Task();
         Item item = new Item();
 
-        cat.test();
-        checklist.test();
-        task.test();
-        item.test();
+        cat.setTitle("Test Title");
+
+//        cat.test();
+//        checklist.test();
+//        task.test();
+//        item.test();
+
+        System.out.println(cat.getTitle());
 
     }
 }
