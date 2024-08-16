@@ -14,8 +14,12 @@ public class Builder {
         cat.setTitle(catTitle);
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String json = gson.toJson(cat);
 
+        try (FileWriter writer = new FileWriter("testOutput.json")) {
+            writer.write(gson.toJson(cat));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
